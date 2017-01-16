@@ -6,5 +6,14 @@
         xmlns:local="clr-namespace:NeoProject"
         mc:Ignorable="d"
         Title="MainWindow" Height="350" Width="525">
-    <Label x:Name="label" Content="NEKI DJAVO" HorizontalAlignment="Left" Margin="242,92,0,0" VerticalAlignment="Top"/>
+    <CheckBox x:Name="checkBox" Content="CheckBox" HorizontalAlignment="Left" Margin="50,51,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.53,0.508" Checked="checkBox_Checked" Width="132" Height="61">
+        <CheckBox.RenderTransform>
+            <TransformGroup>
+                <ScaleTransform/>
+                <SkewTransform/>
+                <RotateTransform Angle="1800.226"/>
+                <TranslateTransform X="0.004" Y="0.016"/>
+            </TransformGroup>
+        </CheckBox.RenderTransform>
+    </CheckBox>
 </Window>
