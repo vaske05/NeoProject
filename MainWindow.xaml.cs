@@ -27,8 +27,10 @@ namespace NeoProject
 
         private void checkBox_Checked(object sender, RoutedEventArgs e)
         {
+
+            int petra = 1;
             string jaja;
-            
+         
         }
     }
 }
