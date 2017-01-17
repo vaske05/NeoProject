@@ -10,7 +10,7 @@
         WindowStartupLocation="Manual"
         Top="0"
         Left="0"
-        Title="NeoProject" Height="500" Width="700" Background="#FF4A4D4F" MinWidth="700" MinHeight="500" HorizontalAlignment="Center" VerticalAlignment="Center">
+        Title="NeoProject" Height="373" Width="605" Background="#FF4A4D4F" MinWidth="700" MinHeight="500" HorizontalAlignment="Center" VerticalAlignment="Center">
     <Grid HorizontalAlignment="Left" Height="467" Margin="0" VerticalAlignment="Top" Width="690"/>
 </Window>
       
