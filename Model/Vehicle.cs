@@ -8,5 +8,8 @@ namespace NeoProject.Model
 {
     class Vehicle
     {
+        String id           { get; set; }
+        String model        { get; set; }
+        String manufacturer { get; set; }
     }
 }

@@ -8,5 +8,10 @@ namespace NeoProject.Model
 {
     class Person
     {
+        String name     { get; set; }
+        String lastname { get; set; }
+        String sex      { get; set; }
+        int    jmbg     { get; set; }
+
     }
 }

@@ -8,5 +8,8 @@ namespace NeoProject.Model
 {
     class AlarmSystem
     {
+        String   manufacturer    { get; set; }
+        String   productionYear  { get; set; }
+        DateTime instalationDate { set; get; }
     }
 }

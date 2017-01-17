@@ -8,5 +8,6 @@ namespace NeoProject.Model
 {
     class Patrol
     {
+        String id { get; set; }
     }
 }

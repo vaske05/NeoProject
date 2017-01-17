@@ -8,5 +8,6 @@ namespace NeoProject.Model
 {
     class PoliceDepartment
     {
+        String city { get; set; }
     }
 }
