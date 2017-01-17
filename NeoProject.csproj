@@ -89,7 +89,14 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Model.cs" />
+    <Compile Include="Model\AlarmSystem.cs" />
+    <Compile Include="Model\Intervention.cs" />
+    <Compile Include="Model\Object.cs" />
+    <Compile Include="Model\Patrol.cs" />
+    <Compile Include="Model\Person.cs" />
+    <Compile Include="Model\PoliceDepartment.cs" />
+    <Compile Include="Model\PoliceStation.cs" />
+    <Compile Include="Model\Vehicle.cs" />
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
     </Compile>
