@@ -5,6 +5,12 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:NeoProject"
         mc:Ignorable="d"
-        Title="MainWindow" Height="248" Width="525">
-    <RadioButton x:Name="radioButton" Content="RadioButton" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top"/>
+        ResizeMode="CanResizeWithGrip"
+        WindowState="Normal"
+        WindowStartupLocation="Manual"
+        Top="0"
+        Left="0"
+        Title="NeoProject" Height="500" Width="700" Background="#FF4A4D4F" MinWidth="700" MinHeight="500" HorizontalAlignment="Center" VerticalAlignment="Center">
+    <Grid HorizontalAlignment="Left" Height="467" Margin="0" VerticalAlignment="Top" Width="690"/>
 </Window>
+      
