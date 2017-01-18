@@ -12,6 +12,9 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using Neo4jClient;
+using Neo4jClient.Cypher;
+using NeoProject.Model;
 
 namespace NeoProject
 {
@@ -23,8 +26,21 @@ namespace NeoProject
         public MainWindow()
         {
             InitializeComponent();
+
+            // Database Connection
+            var client = new GraphClient(new Uri("http://localhost:7474/db/data"), "neo4j", "neo4j1");
+
+            try
+            {
+                client.Connect();
+            }
+            catch(Exception exc)
+            {
+                MessageBox.Show(exc.Message);
+            }
         }
 
+       
 
         // POLICE STATION BUTTON
         private void button_Click(object sender, RoutedEventArgs e)
@@ -133,6 +149,14 @@ namespace NeoProject
             {
                 VehicleCanvas.Visibility = Visibility.Visible;
             }
+        }
+
+
+        // Create new Police Station Button
+        private void button8_Click(object sender, RoutedEventArgs e)
+        {
+            
+
         }
     }
 }

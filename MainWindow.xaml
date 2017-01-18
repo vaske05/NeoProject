@@ -40,7 +40,7 @@
             <Button x:Name="button5" Content="Intervention" HorizontalAlignment="Center" Margin="20,14,12,10" Grid.Row="6" VerticalAlignment="Center" Width="106" Height="34" Foreground="White" BorderBrush="White" Background="#FFA6A6A6" Click="button5_Click"/>
             <Button x:Name="button6" Content="Police Department" HorizontalAlignment="Center" Margin="20,16,12,7" VerticalAlignment="Center" Width="106" Height="34" Foreground="White" BorderBrush="White" Background="#FFA6A6A6" Click="button6_Click"/>
             <Button x:Name="button7" Content="Vehicle" HorizontalAlignment="Center" Margin="20,16,12,6" Grid.Row="7" VerticalAlignment="Center" Width="106" Height="35" Foreground="White" BorderBrush="White" Background="#FFA6A6A6" Click="button7_Click"/>
-            <Canvas x:Name="PoliceStationCanvas" Grid.Column="1" HorizontalAlignment="Center" Height="435" Margin="0,16,24,6" Grid.RowSpan="8" VerticalAlignment="Center" Width="518" Background="#FF636363" Visibility="Hidden">
+            <Canvas x:Name="PoliceStationCanvas" Grid.Column="1" HorizontalAlignment="Center" Height="435" Margin="0,16,24,6" Grid.RowSpan="8" VerticalAlignment="Center" Width="518" Background="#FF636363">
                 <TextBlock x:Name="textBlock" Canvas.Left="437" TextWrapping="Wrap" Text="Police Station" Canvas.Top="409" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="White"/>
                 <StackPanel x:Name="PoliceStationPanel1" Height="287" Canvas.Left="10" Canvas.Top="10" Width="210" Background="#FF838383">
                     <TextBlock x:Name="textBlock11" TextWrapping="Wrap" Text="Create new Police Station:" VerticalAlignment="Center" HorizontalAlignment="Center" Foreground="White" Margin="0,5,0,0"/>
@@ -59,7 +59,7 @@
                             </LinearGradientBrush>
                         </ComboBox.Background>
                     </ComboBox>
-                    <Button x:Name="button8" Content="Create" Margin="10" Width="190" Height="25" Foreground="White" BorderBrush="White" Background="#FFA6A6A6"/>
+                    <Button x:Name="button8" Content="Create" Margin="10" Width="190" Height="25" Foreground="White" BorderBrush="White" Background="#FFA6A6A6" Click="button8_Click"/>
                 </StackPanel>
             </Canvas>
             <Canvas x:Name="PersonCanvas" Grid.Column="1" HorizontalAlignment="Left" Height="435" Margin="0,16,0,0" Grid.RowSpan="8" VerticalAlignment="Top" Width="518" Background="#FF636363" Visibility="Hidden">
