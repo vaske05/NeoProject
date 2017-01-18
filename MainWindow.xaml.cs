@@ -25,12 +25,114 @@ namespace NeoProject
             InitializeComponent();
         }
 
-        private void checkBox_Checked(object sender, RoutedEventArgs e)
-        {
 
-            int petra = 1;
-            string jaja;
-         
+        // POLICE STATION BUTTON
+        private void button_Click(object sender, RoutedEventArgs e)
+        {
+            if(PoliceStationCanvas.IsVisible)
+            {
+                PoliceStationCanvas.Visibility = Visibility.Hidden;
+            }
+            else
+            {
+                PoliceStationCanvas.Visibility = Visibility.Visible;
+            }
+        }
+
+        // PERSON BUTTON
+        private void button1_Click(object sender, RoutedEventArgs e)
+        {
+            if(PersonCanvas.IsVisible)
+            {
+                PersonCanvas.Visibility = Visibility.Hidden;
+            }
+            else
+            {
+                PersonCanvas.Visibility = Visibility.Visible;
+            }
+
+        }
+
+        // OBJECT BUTTON
+        private void button2_Click(object sender, RoutedEventArgs e)
+        {
+            if(ObjectCanvas.IsVisible)
+            {
+                ObjectCanvas.Visibility = Visibility.Hidden;
+            }
+            else
+            {
+                ObjectCanvas.Visibility = Visibility.Visible;
+            }
+        }
+
+        // ALARM SYSTEM BUTTON
+        private void button3_Click(object sender, RoutedEventArgs e)
+        {
+            if(AlarmSystemCanvas.IsVisible)
+            {
+                AlarmSystemCanvas.Visibility = Visibility.Hidden;
+            }
+            else
+            {
+                AlarmSystemCanvas.Visibility = Visibility.Visible;
+            }
+        }
+
+
+        // PATROL BUTTON
+        private void button4_Click(object sender, RoutedEventArgs e)
+        {
+            if(PatrolCanvas.IsVisible)
+            {
+                PatrolCanvas.Visibility = Visibility.Hidden;
+            }
+            else
+            {
+                PatrolCanvas.Visibility = Visibility.Visible;
+            }
+        }
+
+
+        // INTERVENTION BUTTON
+        private void button5_Click(object sender, RoutedEventArgs e)
+        {
+            if(InterventionCanvas.IsVisible)
+            {
+                InterventionCanvas.Visibility = Visibility.Hidden;
+            }
+            else
+            {
+                InterventionCanvas.Visibility = Visibility.Visible;
+            }
+        }
+
+
+        // POLICE DEPARTMENT BUTTON
+        private void button6_Click(object sender, RoutedEventArgs e)
+        {
+            if(PoliceDepartmentCanvas.IsVisible)
+            {
+                PoliceDepartmentCanvas.Visibility = Visibility.Hidden;
+            }
+            else
+            {
+                PoliceDepartmentCanvas.Visibility = Visibility.Visible;
+            }
+        }
+
+
+        // VEHICLE BUTTON
+        private void button7_Click(object sender, RoutedEventArgs e)
+        {
+            if(VehicleCanvas.IsVisible)
+            {
+                VehicleCanvas.Visibility = Visibility.Hidden;
+            }
+            else
+            {
+                VehicleCanvas.Visibility = Visibility.Visible;
+            }
         }
     }
 }

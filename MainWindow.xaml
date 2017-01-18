@@ -10,7 +10,153 @@
         WindowStartupLocation="Manual"
         Top="0"
         Left="0"
-        Title="NeoProject" Height="500" Width="700" Background="#FF4A4D4F" MinWidth="700" MinHeight="500" HorizontalAlignment="Center" VerticalAlignment="Center">
-    <Grid HorizontalAlignment="Left" Height="467" Margin="0" VerticalAlignment="Top" Width="690"/>
+        Title="NeoProject" Height="500" Width="700" Background="#FF595959" MinWidth="700" MinHeight="500" HorizontalAlignment="Center" VerticalAlignment="Center">
+    <Grid HorizontalAlignment="Left" Height="467" Margin="0" VerticalAlignment="Top" Width="690">
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Grid Height="457" Margin="10,0,0,0" VerticalAlignment="Top" UseLayoutRounding="False" HorizontalAlignment="Left" Width="680">
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition Height="0*"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition Width="542"/>
+            </Grid.ColumnDefinitions>
+            <Button x:Name="button" Content="Police Station" HorizontalAlignment="Center" Margin="20,13,12,10" VerticalAlignment="Center" Width="106" Height="34" Foreground="White" BorderBrush="White" Background="#FFA6A6A6" Click="button_Click" Grid.Row="1"/>
+            <Button x:Name="button1" Content="Person" HorizontalAlignment="Center" Margin="20,13,12,10" Grid.Row="2" VerticalAlignment="Center" Width="106" Height="34" Foreground="White" BorderBrush="White" Background="#FFA6A6A6" Click="button1_Click"/>
+            <Button x:Name="button2" Content="Object" HorizontalAlignment="Center" Margin="20,10,12,13" Grid.Row="3" VerticalAlignment="Center" Width="106" Height="34" Foreground="White" BorderBrush="White" Background="#FFA6A6A6" Click="button2_Click"/>
+            <Button x:Name="button3" Content="Alarm System" HorizontalAlignment="Center" Margin="20,10,12,13" Grid.Row="4" VerticalAlignment="Center" Width="106" Height="34" Foreground="White" BorderBrush="White" Background="#FFA6A6A6" Click="button3_Click"/>
+            <Button x:Name="button4" Content="Patrol" HorizontalAlignment="Center" Margin="20,13,12,10" Grid.Row="5" VerticalAlignment="Center" Width="106" Height="34" Foreground="White" BorderBrush="White" Background="#FFA6A6A6" Click="button4_Click"/>
+            <Button x:Name="button5" Content="Intervention" HorizontalAlignment="Center" Margin="20,14,12,10" Grid.Row="6" VerticalAlignment="Center" Width="106" Height="34" Foreground="White" BorderBrush="White" Background="#FFA6A6A6" Click="button5_Click"/>
+            <Button x:Name="button6" Content="Police Department" HorizontalAlignment="Center" Margin="20,16,12,7" VerticalAlignment="Center" Width="106" Height="34" Foreground="White" BorderBrush="White" Background="#FFA6A6A6" Click="button6_Click"/>
+            <Button x:Name="button7" Content="Vehicle" HorizontalAlignment="Center" Margin="20,16,12,6" Grid.Row="7" VerticalAlignment="Center" Width="106" Height="35" Foreground="White" BorderBrush="White" Background="#FFA6A6A6" Click="button7_Click"/>
+            <Canvas x:Name="PoliceStationCanvas" Grid.Column="1" HorizontalAlignment="Center" Height="435" Margin="0,16,24,6" Grid.RowSpan="8" VerticalAlignment="Center" Width="518" Background="#FF636363" Visibility="Hidden">
+                <TextBlock x:Name="textBlock" Canvas.Left="437" TextWrapping="Wrap" Text="Police Station" Canvas.Top="409" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="White"/>
+                <StackPanel x:Name="PoliceStationPanel1" Height="287" Canvas.Left="10" Canvas.Top="10" Width="210" Background="#FF838383">
+                    <TextBlock x:Name="textBlock11" TextWrapping="Wrap" Text="Create new Police Station:" VerticalAlignment="Center" HorizontalAlignment="Center" Foreground="White" Margin="0,5,0,0"/>
+                    <TextBlock x:Name="textBlock8" TextWrapping="Wrap" Text="Police Station Name:" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="White" Margin="0,20,0,5"/>
+                    <TextBox x:Name="textBox" Height="25" TextWrapping="Wrap" HorizontalAlignment="Center" VerticalAlignment="Center" Width="190"/>
+                    <TextBlock x:Name="textBlock9" TextWrapping="Wrap" Text="Municipality:" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="White" Margin="0,5"/>
+                    <TextBox x:Name="textBox1" Height="25" TextWrapping="Wrap" HorizontalAlignment="Center" VerticalAlignment="Center" Width="190"/>
+                    <TextBlock x:Name="textBlock10" TextWrapping="Wrap" Text="Address:" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="White" Margin="0,5"/>
+                    <TextBox x:Name="textBox2" Height="25" TextWrapping="Wrap" Foreground="{x:Null}" Width="190"/>
+                    <TextBlock x:Name="textBlock12" TextWrapping="Wrap" Text="Choose a Department:" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="White" Margin="0,5"/>
+                    <ComboBox x:Name="comboBox" Width="190" Height="25" BorderBrush="White" Foreground="White">
+                        <ComboBox.Background>
+                            <LinearGradientBrush EndPoint="0,1" StartPoint="0,0">
+                                <GradientStop Color="#FFF0F0F0" Offset="0"/>
+                                <GradientStop Color="White" Offset="1"/>
+                            </LinearGradientBrush>
+                        </ComboBox.Background>
+                    </ComboBox>
+                    <Button x:Name="button8" Content="Create" Margin="10" Width="190" Height="25" Foreground="White" BorderBrush="White" Background="#FFA6A6A6"/>
+                </StackPanel>
+            </Canvas>
+            <Canvas x:Name="PersonCanvas" Grid.Column="1" HorizontalAlignment="Left" Height="435" Margin="0,16,0,0" Grid.RowSpan="8" VerticalAlignment="Top" Width="518" Background="#FF636363" Visibility="Hidden">
+                <TextBlock x:Name="textBlock1" Canvas.Left="472" TextWrapping="Wrap" Text="Person" Canvas.Top="409" Foreground="White" VerticalAlignment="Center" HorizontalAlignment="Center" RenderTransformOrigin="0.528,1.125"/>
+                <StackPanel Height="319" Canvas.Left="10" Canvas.Top="10" Width="269" Background="#FF838383">
+                    <TextBlock x:Name="textBlock16" TextWrapping="Wrap" Text="Create a Person:" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="White" Margin="0,5,0,0"/>
+                    <TextBlock x:Name="textBlock17" TextWrapping="Wrap" Text="First Name:" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,20,0,5" Foreground="White"/>
+                    <TextBox x:Name="textBox5" Height="23" TextWrapping="Wrap" Width="250"/>
+                    <TextBlock x:Name="textBlock18" TextWrapping="Wrap" Text="Last Name:" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,5" Foreground="White"/>
+                    <TextBox x:Name="textBox6" Height="23" TextWrapping="Wrap" Width="250"/>
+                    <TextBlock x:Name="textBlock19" TextWrapping="Wrap" Text="ID:" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,5" Foreground="White"/>
+                    <TextBox x:Name="textBox7" Height="23" TextWrapping="Wrap" Width="250"/>
+                    <TextBlock x:Name="textBlock20" TextWrapping="Wrap" Text="Choose a Sex:" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,5" Foreground="White"/>
+                    <ComboBox x:Name="comboBox1" Width="250"/>
+                    <TextBlock x:Name="textBlock21" TextWrapping="Wrap" Text="Choose a Workplace:" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,5" Foreground="White"/>
+                    <ComboBox x:Name="comboBox2" Margin="0,0,0,10" Width="250"/>
+                    <Button x:Name="button10" Content="Create" Background="#FFA6A6A6" Foreground="White" BorderBrush="White" Width="250"/>
+                </StackPanel>
+            </Canvas>
+            <Canvas x:Name="ObjectCanvas" Background="#FF636363" Grid.Column="1" HorizontalAlignment="Left" Height="435" Margin="0,16,0,0" Grid.RowSpan="8" VerticalAlignment="Top" Width="518" Visibility="Hidden">
+                <TextBlock x:Name="textBlock2" Canvas.Left="473" TextWrapping="Wrap" Text="Object" Canvas.Top="409" Foreground="White"/>
+                <StackPanel HorizontalAlignment="Left" Height="303" VerticalAlignment="Top" Width="280" Background="#FF838383" Canvas.Left="10" Canvas.Top="10">
+                    <TextBlock x:Name="textBlock22" TextWrapping="Wrap" Text="Create an Object:" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,5,0,20" Foreground="White"/>
+                    <TextBlock x:Name="textBlock23" TextWrapping="Wrap" Text="Object Name:" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,5" Foreground="White"/>
+                    <TextBox x:Name="textBox8" Height="23" TextWrapping="Wrap" Width="250"/>
+                    <TextBlock x:Name="textBlock24" TextWrapping="Wrap" Text="Object Address:" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,5" Foreground="White"/>
+                    <TextBox x:Name="textBox9" Height="23" TextWrapping="Wrap" Width="250"/>
+                    <TextBlock x:Name="textBlock25" TextWrapping="Wrap" Text="Type of Object:" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,5" Foreground="White"/>
+                    <TextBox x:Name="textBox10" Height="23" TextWrapping="Wrap" Width="250"/>
+                    <TextBlock x:Name="textBlock30" TextWrapping="Wrap" Text="Alarm System:" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,5"/>
+                    <ComboBox x:Name="comboBox3" Width="250" Height="25" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,5"/>
+                    <Button x:Name="button11" Content="Create" Width="250" Margin="0,10,0,5" Foreground="White" BorderBrush="#FFA6A6A6" Background="#FFA6A6A6" Height="25"/>
+                </StackPanel>
+            </Canvas>
+            <Canvas x:Name="AlarmSystemCanvas" Grid.Column="1" Background="#FF636363" HorizontalAlignment="Left" Height="435" Margin="0,16,0,0" Grid.RowSpan="8" VerticalAlignment="Top" Width="518" Visibility="Hidden">
+                <TextBlock x:Name="textBlock3" Canvas.Left="436" TextWrapping="Wrap" Text="Alarm System" Canvas.Top="409" Foreground="White"/>
+                <StackPanel Height="254" Canvas.Top="10" Width="275" Background="#FF838383" Canvas.Left="10">
+                    <TextBlock x:Name="textBlock26" TextWrapping="Wrap" Text="Create an Alarm System:" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="White" Margin="0,5,0,25"/>
+                    <TextBlock x:Name="textBlock27" TextWrapping="Wrap" Text="Production Year (YYYY):" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="White" Margin="0,5"/>
+                    <TextBox x:Name="textBox11" Height="25" TextWrapping="Wrap" Width="250" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                    <TextBlock x:Name="textBlock28" TextWrapping="Wrap" Text="Date of Installation (DD/MM/YYYY):" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="White" Margin="0,5"/>
+                    <TextBox x:Name="textBox12" Height="25" TextWrapping="Wrap" Width="250" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                    <TextBlock x:Name="textBlock29" TextWrapping="Wrap" Text="Manufacturer:" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="White" Margin="0,5"/>
+                    <TextBox x:Name="textBox13" Height="25" TextWrapping="Wrap" Width="250" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                    <Button x:Name="button12" Content="Create:" Margin="0,10,0,5" Width="250" Height="25" Foreground="White" BorderBrush="White" Background="#FFA6A6A6"/>
+                </StackPanel>
+            </Canvas>
+            <Canvas x:Name="PatrolCanvas" Grid.Column="1" Background="#FF636363" HorizontalAlignment="Left" Height="435" Margin="0,16,0,0" Grid.RowSpan="8" VerticalAlignment="Top" Width="518" Visibility="Hidden">
+                <TextBlock x:Name="textBlock4" Canvas.Left="477" TextWrapping="Wrap" Text="Patrol" Canvas.Top="409" Foreground="White"/>
+                <StackPanel Height="282" Canvas.Left="10" Canvas.Top="10" Width="280" Background="#FF838383">
+                    <TextBlock x:Name="textBlock31" TextWrapping="Wrap" Text="Create a Patrol:" Margin="0,5,0,25" VerticalAlignment="Center" HorizontalAlignment="Center" Foreground="White"/>
+                    <TextBlock x:Name="textBlock32" TextWrapping="Wrap" Text="Enter Patrol ID:" Margin="0,5" VerticalAlignment="Center" HorizontalAlignment="Center" Foreground="White"/>
+                    <TextBox x:Name="textBox14" Height="23" TextWrapping="Wrap" Width="250"/>
+                    <TextBlock x:Name="textBlock33" TextWrapping="Wrap" Text="Choose Members:" Margin="0,5" VerticalAlignment="Center" HorizontalAlignment="Center" Foreground="White"/>
+                    <ListBox x:Name="listBox" Height="59" Width="250"/>
+                    <TextBlock x:Name="textBlock34" TextWrapping="Wrap" Text="Choose a Vehicle:" Margin="0,5" VerticalAlignment="Center" HorizontalAlignment="Center" Foreground="White"/>
+                    <ComboBox x:Name="comboBox4" Width="250"/>
+                    <Button x:Name="button13" Content="Create:" Width="250" Margin="0,15,0,5" Background="#FFA6A6A6" Foreground="White" BorderBrush="White"/>
+                </StackPanel>
+            </Canvas>
+            <Canvas x:Name="InterventionCanvas" Grid.Column="1" Background="#FF636363" HorizontalAlignment="Left" Height="435" Margin="0,16,0,0" Grid.RowSpan="8" VerticalAlignment="Top" Width="518" Visibility="Hidden">
+                <TextBlock x:Name="textBlock5" Canvas.Left="444" TextWrapping="Wrap" Text="Intervention" Canvas.Top="409" RenderTransformOrigin="1,-0.5" Foreground="White"/>
+                <StackPanel Height="310" Canvas.Left="10" Canvas.Top="10" Width="269" Background="#FF838383">
+                    <TextBlock x:Name="textBlock35" TextWrapping="Wrap" Text="Create an Intervention:" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,5,0,20" Foreground="White"/>
+                    <TextBlock x:Name="textBlock36" TextWrapping="Wrap" Text="Intervention Description:" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,5" Foreground="White"/>
+                    <TextBox x:Name="textBox15" Height="101" AcceptsReturn="True" TextWrapping="Wrap" Width="250"/>
+                    <TextBlock x:Name="textBlock37" TextWrapping="Wrap" Text="Enter a Date (DD/MM/YYYY):" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,5" Foreground="White"/>
+                    <TextBox x:Name="textBox16" Height="23" TextWrapping="Wrap" Width="250"/>
+                    <TextBlock x:Name="textBlock38" TextWrapping="Wrap" Text="Choose an Object:" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,5" Foreground="White"/>
+                    <ComboBox x:Name="comboBox5" Width="250"/>
+                    <Button x:Name="button14" Content="Create" Width="250" Margin="0,10,0,5" Background="#FFA6A6A6" BorderBrush="White" Foreground="White"/>
+                </StackPanel>
+            </Canvas>
+            <Canvas x:Name="PoliceDepartmentCanvas" Grid.Column="1" Background="#FF636363" HorizontalAlignment="Left" Height="435" Margin="0,16,0,0" Grid.RowSpan="8" VerticalAlignment="Top" Width="518" Visibility="Hidden">
+                <TextBlock x:Name="textBlock6" Canvas.Left="410" TextWrapping="Wrap" Text="Police Department" Canvas.Top="409" Foreground="White"/>
+                <StackPanel Height="194" Canvas.Left="10" Canvas.Top="10" Width="498" Background="#FF838383" HorizontalAlignment="Center" VerticalAlignment="Center">
+                    <TextBlock x:Name="textBlock13" TextWrapping="Wrap" Text="Create a Police Department:" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="White" Margin="0,5,0,0"/>
+                    <TextBlock x:Name="textBlock14" TextWrapping="Wrap" Text="Police Department Name:" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="White" Margin="0,20,0,5"/>
+                    <TextBox x:Name="textBox3" Height="25" TextWrapping="Wrap" HorizontalAlignment="Center" VerticalAlignment="Center" Width="220"/>
+                    <TextBlock x:Name="textBlock15" TextWrapping="Wrap" Text="Police Department Address:" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="White" Margin="0,5"/>
+                    <TextBox x:Name="textBox4" Height="25" TextWrapping="Wrap" HorizontalAlignment="Center" VerticalAlignment="Center" Width="220"/>
+                    <Button x:Name="button9" Content="Create" Margin="139,10,139,0" Height="25" BorderBrush="White" Foreground="White" Background="#FF838383"/>
+                </StackPanel>
+            </Canvas>
+            <Canvas x:Name="VehicleCanvas" Grid.Column="1" Background="#FF636363" HorizontalAlignment="Left" Height="435" Margin="0,16,0,0" Grid.RowSpan="8" VerticalAlignment="Top" Width="518" Visibility="Hidden">
+                <TextBlock x:Name="textBlock7" Canvas.Left="471" TextWrapping="Wrap" Text="Vehicle" Canvas.Top="409" Foreground="White"/>
+                <StackPanel Height="264" Canvas.Left="10" Canvas.Top="10" Width="287" Background="#FF838383">
+                    <TextBlock x:Name="textBlock39" TextWrapping="Wrap" Text="Create a Vehicle:" Margin="0,5,0,20" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="White"/>
+                    <TextBlock x:Name="textBlock40" TextWrapping="Wrap" Text="Manufacturer Name:" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="White" Margin="0,5"/>
+                    <TextBox x:Name="textBox17" Height="23" TextWrapping="Wrap" Width="250"/>
+                    <TextBlock x:Name="textBlock41" TextWrapping="Wrap" Text="Model Name:" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="White" Margin="0,5"/>
+                    <TextBox x:Name="textBox18" Height="23" TextWrapping="Wrap" Width="250"/>
+                    <TextBlock x:Name="textBlock42" TextWrapping="Wrap" Text="Vehicle Type:" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="White" Margin="0,5"/>
+                    <TextBox x:Name="textBox19" Height="23" TextWrapping="Wrap" Width="250"/>
+                    <Button x:Name="button15" Content="Create" Width="250" Height="25" Margin="0,10,0,5" Background="#FFA6A6A6" Foreground="White" BorderBrush="White"/>
+                </StackPanel>
+            </Canvas>
+        </Grid>
+    </Grid>
 </Window>
       
