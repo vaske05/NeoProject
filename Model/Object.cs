@@ -10,5 +10,6 @@ namespace NeoProject.Model
     {
         String type     { get; set; }
         String adress   { get; set; }
+        String name     { get; set; } 
     }
 }
