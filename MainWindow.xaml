@@ -10,6 +10,7 @@
         WindowStartupLocation="Manual"
         Top="0"
         Left="0"
+
         Title="NeoProject" Height="500" Width="700" Background="#FF595959" MinWidth="700" MinHeight="500" HorizontalAlignment="Center" VerticalAlignment="Center">
     <Grid HorizontalAlignment="Left" Height="467" Margin="0" VerticalAlignment="Top" Width="690">
         <Grid.RowDefinitions>
@@ -158,5 +159,7 @@
             </Canvas>
         </Grid>
     </Grid>
+
+
 </Window>
       
