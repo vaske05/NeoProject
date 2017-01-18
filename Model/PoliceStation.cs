@@ -9,7 +9,7 @@ namespace NeoProject.Model
     class PoliceStation
     {
         String name     { get; set; }
-        String city     { get; set; }
+        String municipality    { get; set; }
         String adress   { get; set; }
     }
 }
