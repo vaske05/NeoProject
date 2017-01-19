@@ -8,8 +8,8 @@ namespace NeoProject.Model
 {
     class PoliceStation
     {
-        String name     { get; set; }
-        String municipality    { get; set; }
-        String adress   { get; set; }
+        String name         { get; set; }
+        String municipality { get; set; }
+        String adress       { get; set; }
     }
 }
